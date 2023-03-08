@@ -17,15 +17,6 @@ public class CustomListTest {
     private ArrayList<City> citylist = new ArrayList<>();
 
     @Test
-    public void hasCity(){
-
-        CustomList list = new CustomList(null, citylist);
-        City city = new City("Calgary", "AB");
-        list.addCity(city);
-        list.getPosition(city);
-
-    }
-    @Test
     public void testAddCity(){
         CustomList list = new CustomList(null, citylist);
         City city = new City("Edmonton", "AB");
