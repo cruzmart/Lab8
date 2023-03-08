@@ -57,5 +57,26 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city){
         cities.add(city);
     }
-
+    /**
+     *  This returns whether the city belongs in the list or not.
+     * @param city
+     * @return
+     */
+    public boolean hasCity(City city){
+        return this.cities.contains(city);
+    }
+    /**
+     * This deletes the city in the List<City>
+     * @param city
+     */
+    public void delete(City city){
+        this.cities.remove(city);
+    }
+    /**
+     * This returns the amount of cities in the List<City>
+     * @return
+     */
+    public int countCities(){
+        return this.cities.size();
+    }
 }
